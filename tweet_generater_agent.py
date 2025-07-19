@@ -14,7 +14,7 @@ from IPython.display import display, Markdown
 
 # Set up Gemini API 
 
-API_KEY = "AIzaSyCDEbDm0bDAMYTi8uUvLWEPiWuLeHWDXkA"
+API_KEY = "YourApiKey"
 genai.configure(api_key = API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
