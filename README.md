@@ -40,18 +40,33 @@ cd AI_agents
 ```
 
 ### 2. Install required packages
-Make sure you have Python 3 installed, then run:
+
+Here’s a full pip install command for all dependencies:
 
 ```bash
-pip install google-generativeai ipywidgets
+pip install google-generativeai ipywidgets IPython langgraph langchain langchain_community nest_asyncio python-dotenv
 ```
 
-### 3. Configure API Key
-Edit the `.py` or `.ipynb` file and replace:
-```python
-API_KEY = "YourApiKey"
+If you're using Jupyter Notebook, install it as well:
+
+```bash
+pip install notebook
 ```
-with your actual Gemini API key from [Google AI Studio](https://makersuite.google.com/app).
+
+---
+
+## 📦 Required Python Packages
+
+| Package | Purpose |
+|---------|---------|
+| `google-generativeai` | Access Gemini models via Google Generative AI |
+| `ipywidgets` | Create interactive UI in notebooks |
+| `IPython` (`IPython.display`) | Render markdown and rich outputs |
+| `langgraph` | Build LLM agent flows |
+| `langchain` | Framework for chaining LLM tasks |
+| `langchain_community` | Community tools for LangChain |
+| `nest_asyncio` | Enable async execution in Jupyter |
+| `python-dotenv` | Load secrets like API keys from `.env` file |
 
 ---
 
